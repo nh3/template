@@ -12,7 +12,9 @@ Options:
 
 
 import logging
+import signal
 import sys
+signal.signal(signal.SIGPIPE, signal.SIG_DFL)
 
 
 def main(args):
